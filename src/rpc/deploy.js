@@ -49,7 +49,6 @@ const deployScript = async (binPath) => {
       outputsData: [`0x${bin}`, "0x"],
     };
     rawTx.witnesses = rawTx.inputs.map((_, i) => (i > 0 ? "0x" : {lock: "", inputType: "", outputType: ""}));
-    console.log(JSON.stringify(rawTx));
     const signedTx = ckb.signTransaction(DEPLOYER_PRIVATE_KEY)(rawTx);
     const txHash = await ckb.rpc.sendTransaction(signedTx);
     console.info(`Deploy script with code and tx hash ${txHash}`);
