@@ -1,0 +1,18 @@
+{
+  "name": "ckb-script-deployer",
+  "version": "1.0.0",
+  "description": "A deployer of Nervos CKB script",
+  "main": "index.js",
+  "author": "Dylan <duanyytop@gmail.com>",
+  "license": "MIT",
+
+  "dependencies": {
+    "@nervosnetwork/ckb-sdk-core": "^0.38.2",
+    "@nervosnetwork/ckb-sdk-utils": "^0.38.2",
+    "node-fetch": "^2.6.1"
+  },
+
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
